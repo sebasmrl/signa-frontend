@@ -39,6 +39,7 @@ export const MultiStepsForm = ({ className, ...props }: Props) => {
     });
 
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     function onSubmit(values: z.infer<typeof multiStepsScheme>) {
 
     }
