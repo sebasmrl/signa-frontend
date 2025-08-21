@@ -6,6 +6,6 @@ interface ServiceItem{
 export const serviceItems:ServiceItem[] = [
     {
         title: 'Registro de Marca',
-        url: 'dashboard/brands'
+        url: '/dashboard/brands'
     }
 ]

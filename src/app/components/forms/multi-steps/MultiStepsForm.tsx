@@ -50,7 +50,11 @@ export const MultiStepsForm = ({ className, ...props }: Props) => {
             {...props} className={cn("p-4", className)}
         >
             <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className=" flex flex-col gap-y-2 items-stretch">
+                <form 
+                    className=" flex flex-col gap-y-2 items-stretch"
+                    onSubmit={form.handleSubmit(onSubmit)} 
+                    onKeyDown={(e) => e.key === "Enter" && e.preventDefault()}
+                >
 
                     <Stepper currentStep={step} steps={['Información de la marca', 'Información del titular', 'Resumen']} />
                     <br />
@@ -132,6 +136,7 @@ export const MultiStepsForm = ({ className, ...props }: Props) => {
                             <div className="flex gap-2 self-end mt-6">
                                 <Button type="button"
                                     className="cursor-pointer"
+                                    
                                     onClick={async () => {
                                         setStep(step - 1)
                                     }}
