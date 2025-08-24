@@ -5,8 +5,12 @@ export interface Brand{
     state: boolean
 }
 
-export interface CreateBrandDto{
+export interface CreateOrUpdateBrandDto{
     owner:string;
     brand:string;
-    state: boolean
+    state?: boolean
+}
+
+export interface DeleteBrandResponse{
+    msg:string
 }

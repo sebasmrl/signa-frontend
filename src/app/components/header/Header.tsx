@@ -13,7 +13,7 @@ export const Header = () => {
             {(path == '/dashboard') ? 'Panel':''}
             {(path.split('/').at(-1) =='brands') ? 'Servicios > Registro de Marca':''}
             {(path == '/dashboard/brands/create') ? 'Servicios > Registro de Marcas > Agregar':''}
-            {(path == '/dashboard/brands/update') ? 'Servicios > Registro de Marca > Actualizar':''}
+            {(path.split('/').at(2) =='brands' && path.split('/').at(-2) == 'update') ? 'Servicios > Registro de Marca > Actualizar':''}
             </p>
 
         </div>

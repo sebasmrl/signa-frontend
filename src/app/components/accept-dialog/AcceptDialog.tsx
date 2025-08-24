@@ -41,14 +41,14 @@ export const AcceptDialog = ({ btntext, btnClassName, dialog, onAccept, onCancel
                 <AlertDialogFooter>
                     <AlertDialogCancel onClick={
                         () => {
-                            if(onAccept) onAccept()
+                            if (onCancel) onCancel()
                         }}
                     >
                         Cancelar
                     </AlertDialogCancel>
                     <AlertDialogAction
                         onClick={() => {
-                            if(onCancel) onCancel()
+                            if (onAccept) onAccept()
                         }}
                     >
                         Aceptar

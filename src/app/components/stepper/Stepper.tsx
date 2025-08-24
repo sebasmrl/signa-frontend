@@ -41,7 +41,7 @@ export const Stepper = ({ steps: stepsText, currentStep }: Props) => {
     }, [currentStep])
 
     return (
-        <div className='flex gap-2 justify-center'>
+        <div className='flex gap-2 justify-center overflow-x-auto'>
             {
                 steps.map((step, i) => (
                     <div key={step.title} className='flex gap-2 items-center'>
