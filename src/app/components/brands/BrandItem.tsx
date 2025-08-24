@@ -17,12 +17,12 @@ export const BrandItem = ({ brand }: Props) => {
 
     const router = useRouter();
     return (
-        <li className="">
+        <li className="rounded-md">
             <Card className="rounded-md">
                 <CardContent className="flex gap-2 justify-between">
                     <div className="flex flex-col md:flex-row gap-4 md:items-center">
-                        <p className="leading-0"><strong>Marca: </strong><span>{brand.brand}</span></p>
-                        <p className="leading-0"><strong>Titular: </strong><span>{brand.owner}</span></p>
+                        <p className="leading-4"><strong>Marca: </strong><span>{brand.brand}</span></p>
+                        <p className="leading-4"><strong>Titular: </strong><span>{brand.owner}</span></p>
                         <Badge variant={(brand.state) ? 'success' : 'destructive'}>
                             {(brand.state) ? 'activa' : 'pendiente'}
                         </Badge>
