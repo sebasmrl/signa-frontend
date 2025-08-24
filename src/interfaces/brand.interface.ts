@@ -4,3 +4,9 @@ export interface Brand{
     brand:string;
     state: boolean
 }
+
+export interface CreateBrandDto{
+    owner:string;
+    brand:string;
+    state: boolean
+}
