@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Brand } from "@/interfaces/brand.interface";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default async function BrandsPage() {
 
   const brands =  await getBrandsAction();
