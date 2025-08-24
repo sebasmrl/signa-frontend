@@ -187,7 +187,7 @@ export const UpdateBrandForm = ({ brand, className, ...props }: Props) => {
                                 >
                                     Atras
                                 </Button>
-                                <Button type="submit" className="cursor-pointer bg-blue-600">Guardar</Button>
+                                <Button type="submit" className="cursor-pointer bg-blue-600">Actualizar</Button>
                             </div>
                         </>
                     }
